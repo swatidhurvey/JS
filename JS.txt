@@ -1,0 +1,68 @@
+1. Introduction to JavaScript
+What is JavaScript?
+Role of JavaScript in Web Development
+Embedding JavaScript (Internal, External)
+Console & Debugging (Chrome DevTools)
+Basic Syntax and Comments
+
+
+2. JavaScript Basics
+Variables (var, let, const)
+Data Types (String, Number, Boolean, Null, Undefined, Symbol, BigInt)
+Operators (Arithmetic, Assignment, Comparison, Logical, Ternary)
+Type Conversion & Type Coercion
+
+3. Control Structures
+Conditional Statements (if, else-if, switch)
+Loops (for, while, do-while)
+Loop Control Statements (break, continue)
+
+
+4. Functions in JavaScript
+Function Declaration & Expression
+Arrow Functions
+Callback Functions
+IIFE (Immediately Invoked Function Expression)
+Higher-Order Functions
+
+
+5. Arrays & Objects
+Creating & Accessing Arrays
+Array Methods (push, pop, shift, unshift, splice, slice, map, filter, reduce, etc.)
+Objects in JavaScript
+Object Methods & Prototypes
+
+
+6. DOM Manipulation
+Understanding DOM & BOM
+Selecting Elements (getElementById, querySelector, etc.)
+Modifying HTML & CSS with JavaScript
+Event Handling (addEventListener, onclick, onchange, etc.)
+Event Bubbling & Capturing
+
+
+7. Advanced JavaScript Concepts
+Hoisting & Scope (Global, Local, Block)
+Closures
+Asynchronous JavaScript (Callbacks, Promises, Async/Await)
+Error Handling (try, catch, finally)
+
+
+8. ES6+ Features
+Template Literals
+Destructuring (Arrays & Objects)
+Spread & Rest Operators
+Default & Named Parameters
+Modules (import/export)
+Optional Chaining
+
+9. Object-Oriented JavaScript
+Constructor Functions
+Classes & Inheritance
+Prototype & Prototypal Inheritance
+
+
+10. JavaScript in the Browser
+Local Storage, Session Storage & Cookies
+Fetch API & AJAX
+JSON Handling
