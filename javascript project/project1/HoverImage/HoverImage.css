@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+main{
+    width:100%;
+    height:100%;
+    background-color: black;
+}
+#part1{
+    width:100%;
+    height:20%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+      gap:30px;
+      position: relative;
+}
+#part1 h1{
+    font-family: monospace;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+#img1{
+    width:150px;
+    height:150px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    transition: translate(-50%,-50%);
+    top:0;
+    left:0;
+}
+#part2{
+    width:100%;
+    height:20%;
+    border: 2px solid white;
+     display: flex;
+    align-items: center;
+      gap:30px;
+      position: relative;
+}
+#part2 h1{
+    font-family: monospace;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+#img2{
+    width:150px;
+    height:150px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#part3{
+    width:100%;
+    height:20%;
+    border: 2px solid white;
+     display: flex;
+    align-items: center;
+      gap:30px;
+      position: relative;
+}
+#part3 h1{
+    font-family: monospace;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+#img3{
+    width:150px;
+    height:150px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#part4{
+    width:100%;
+    height:20%;
+    border: 2px solid white;
+     display: flex;
+    align-items: center;
+      gap:30px;
+      position: relative;
+}
+#part4 h1{
+    font-family: monospace;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+#img4{
+    width:150px;
+    height:150px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#part5{
+    width:100%;
+    height:20%;
+    border: 2px solid white;
+     display: flex;
+    align-items: center;
+    gap:30px;
+    position: relative;
+}
+#part5 h1{
+    font-family: monospace;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+#img5{
+    width:150px;
+    height:150px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+}
