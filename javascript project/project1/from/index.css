@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+form{
+font-family: 'Courier New', Courier, monospace;
+padding: 30px;
+}
+input{
+    display: block;
+    height:30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.card{
+    max-width: 300px;
+    display: inline-block;
+    padding:20px;
+    border: 2px solid #555;
+    margin-top: 40px;
+    color:black;
+}
+.profile{
+    width:50px;
+    height:50px;
+    background-color: red;
+    border-radius: 50% ;
+    margin-bottom: 7px;
+    overflow: hidden;
+}
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card h5{
+margin-top: 3px;
+}
+.card p{
+    font-size: 12px;
+    margin-top: 10px;
+}
