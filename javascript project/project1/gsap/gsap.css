@@ -1,0 +1,38 @@
+/* @font-face {
+    font-family: 'jungle';
+    src: url(./moot-jungle-free-version\ \(5\).zip);
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+
+}
+#gsap img{
+object-fit: cover;
+object-position: center;
+margin-top: 50px;
+}
+h1{
+    text-align: center;
+    font-family: cursive;   
+
+    /* font-family: 'poppins',sans-serif; */
+    background: linear-gradient(to right,#ff0000,orange, rgb(221, 5, 124),blue,red,#bb03bb);
+    -webkit-background-clip: text;
+    color:transparent;
+    font-weight: bold;
+    font-size: 40px;
+    opacity: 0;
+    display: inline-block;
+    /* transform: translate(10px); */
+    position: absolute;
+    top:1px;
+    margin-top: 20%;
+    margin-left: 20%;
+}   

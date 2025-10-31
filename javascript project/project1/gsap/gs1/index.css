@@ -1,0 +1,445 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+main{
+    width:100%;
+    height:100%;
+}
+nav{
+    width:100%;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navpart1{
+    width:50%;
+    height:100%;
+}
+.logo img{
+    width:130px;
+    height:130px;
+    border-radius: 50%;
+   object-fit: cover; 
+   object-position: center;
+}
+#navpart2{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap:10px;
+}
+footer{
+    width:100%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width:50%;
+    height:100%;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+h1{
+    width:100vh;
+    line-height: 60px;
+    font-size: 70px;
+    font-weight: 600;
+}
+p{
+    width:60vh;
+    font-weight: 100;
+    padding-top: 30px;
+}
+.btn{
+    display: flex;
+    gap:10px;
+    padding-top: 20px;
+}
+button{
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.left{
+    width:50%;
+    height:100%;
+}
+#hero{
+    width:340px;
+    height:400px;
+    border-radius: 20px;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+#hero img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+     box-shadow:black 3px 3px 0px 0px;
+     transition: all ease 1s;
+     opacity: 0;
+} */
+
+
+/* === RESET === */
+/* RESET */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #222;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === NAVIGATION === */
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+/* #navpart1 {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+} */
+ /* LOGO CONTAINER */
+
+ /* LOGO CONTAINER */
+#navpart1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  height: 100%;
+}
+
+/* LOGO IMAGE */
+.logo img {
+  width: 70px;       /* responsive size */
+  height: 70px;      /* ensure perfect circle */
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 4px solid transparent; 
+  padding: 4px;       /* gradient border effect */
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  box-shadow: 0 0 20px rgba(0, 114, 255, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+/* LOGO HOVER EFFECT */
+.logo img:hover {
+  transform: scale(1.15) rotate(5deg);  /* floating & rotation */
+  box-shadow: 0 0 35px rgba(0, 114, 255, 0.5);
+}
+
+/* OPTIONAL BRAND NAME BESIDE LOGO */
+.logo span {
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .logo img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+}
+
+/* === NAV LINKS === */
+/* #navpart2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  color:black;
+}
+
+#navpart2 a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+#navpart2 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transition: width 0.4s ease;
+}
+
+#navpart2 a:hover::after {
+  width: 100%;
+}
+
+#navpart2 a:hover {
+  color: #0072ff;
+} */
+#navpart2 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  z-index: 10001; /* higher than hero section */
+}
+
+#navpart2 a {
+  color: #0072ff; /* visible blue color */
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+#navpart2 a:hover {
+  color: #00c6ff;
+}
+
+/* underline animation */
+#navpart2 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transition: width 0.3s ease;
+}
+
+#navpart2 a:hover::after {
+  width: 100%;
+}
+
+/* === FOOTER SECTION (MAIN CONTENT) === */
+footer {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+/* RIGHT TEXT SECTION */
+.right {
+  width: 50%;
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 75px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  width: 60vh;
+  font-size: 18px;
+  font-weight: 300;
+  color: #555;
+  padding-top: 25px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+/* .btn {
+  display: flex;
+  gap: 15px;
+  padding-top: 30px;
+}
+
+button {
+  width: 130px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 15px rgba(0, 114, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 114, 255, 0.4);
+} */
+ /* BUTTON WRAPPER */
+.btn {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+/* BUTTON STYLE */
+button {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  box-shadow: 0 6px 20px rgba(0, 114, 255, 0.3);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+/* HOVER EFFECT - LIFT & GLOW */
+button:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 114, 255, 0.5);
+}
+
+/* BUTTON ACTIVE (CLICK EFFECT) */
+button:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(0, 114, 255, 0.4);
+}
+
+/* GRADIENT SHINE EFFECT */
+button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.3), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+button:hover::before {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* SECONDARY BUTTON STYLE (for variation) */
+button:nth-child(2) {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  box-shadow: 0 6px 20px rgba(255, 118, 150, 0.3);
+}
+
+button:nth-child(2):hover {
+  box-shadow: 0 10px 25px rgba(255, 118, 150, 0.5);
+}
+
+
+/* LEFT IMAGE SECTION */
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  width: 350px;
+  height: 420px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.8s ease;
+}
+
+#hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: transform 0.8s ease;
+}
+
+#hero:hover img {
+  transform: scale(1.08);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  footer {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 60px 0;
+  }
+}
