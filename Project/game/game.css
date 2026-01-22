@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    overflow: hidden;
+    margin: 0;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* height: 400px; */
+    max-width: 450px;
+    background-color: rgba(0, 255, 255, 0.438);
+    border-radius: 20px;
+    padding: 10px;
+    gap:2px;
+}
+.box{
+    width:25px;
+    height:25px;
+    background-color: #1d1d1d;
+    transition: 0.2s ease;
+}
+.box:hover{
+    transition-duration:0 ;
+}

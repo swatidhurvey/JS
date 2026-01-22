@@ -1,0 +1,225 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html,body{
+    /* width:100%; */
+    height:100vh;
+    background-color: rgb(249,238,223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}   
+/* main{
+   width:300px;
+   box-shadow: 3px 3px 10px black;
+   border-radius: 20px;
+   overflow: hidden;
+   padding: 0px;
+}
+.tittle{
+    margin: 0;
+    font-size: 20px;
+}
+.subtittile{
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+header{
+    background-color: rgb(68,68,233,0.903);
+    padding: 10px;
+}
+header input{
+    background-color: white;
+    border-radius: 20px;
+    width:100%;
+    padding: 10px 15px;
+    border: none;
+}
+header input:focus{
+    outline: none;
+}
+.user-list{
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height:400px;
+    overflow-y: auto;
+}
+.user-list li{
+    display: flex;
+    padding: 20px;
+}
+.user-list img{
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    height:50px;
+    width:50px;
+}
+.user-list .user-info{
+    margin: 0 0 10px;
+}
+.user-list .user-info h4{
+    color:black;
+    margin: 0 0 10px;
+}
+
+.user-list .user-info p{
+    font-size: 12px;
+}
+.user-list li:not(:last-of-type){
+border-bottom: 1px solid #eee;
+}
+.user-list li.hide{
+    display: none;
+} */
+
+
+
+/*  */
+/* === GENERAL RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* === SEARCH INPUT === */
+#filter {
+    width: 300px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+}
+
+#filter:focus {
+    border-color: #2196f3;
+}
+
+/* === USER LIST === */
+#result {
+    list-style: none;
+    width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Individual list item */
+#result li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#result li:last-child {
+    border-bottom: none;
+}
+
+#result li:hover {
+    background-color: #f0f8ff;
+}
+
+/* Selected item */
+#result li.selected {
+    background-color: #e0f2ff;
+    border-left: 4px solid #2196f3;
+}
+
+/* User image in list */
+#result li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    pointer-events: none; /* ensures click works */
+}
+
+/* User info in list */
+.user-info h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.user-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* === PROFILE BOX === */
+#profile-box {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#profile-box h3 {
+    color: #2196f3;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#profile-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #2196f3;
+}
+
+#profile-box h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#profile-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Scrollbar design for user list */
+#result::-webkit-scrollbar {
+    width: 6px;
+}
+
+#result::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+#result::-webkit-scrollbar-thumb {
+    background: #2196f3;
+    border-radius: 3px;
+}

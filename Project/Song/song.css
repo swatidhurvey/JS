@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100vh;
+    background-color: rgb(4, 99, 182);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     overflow: hidden;
+}
+.btn{
+    background-color: rgb(142,151,158);
+    border-radius: 10px;
+    color:white;
+    margin:10px;
+    padding:10px;
+    cursor: pointer;
+    /* opacity: 0.5; */
+    border: none;
+    font-size: 30px;
+}
+.btn:hover{
+    opacity: 1;
+}
+.btn:focus{
+outline: none;
+}
