@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+  <h2>🛒 Advanced E-Commerce</h2>
+  <button id="adminBtn">Admin Panel</button>
+</header>
+
+<div class="container">
+  <div class="products">
+    <h3>Products</h3>
+    <div id="productList"></div>
+  </div>
+
+  <div class="cart">
+    <h3>Cart</h3>
+    <div id="cartItems"></div>
+    <h4>Total: ₹<span id="total">0</span></h4>
+    <button id="checkoutBtn">Checkout</button>
+  </div>
+  </div>
+
+<div class="admin hidden" id="adminPanel">
+  <h3>Admin Dashboard</h3>
+  <input id="pname" placeholder="Product Name">
+  <input id="pprice" placeholder="Price">
+  <button id="addProductBtn">Add Product</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
